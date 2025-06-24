@@ -1,11 +1,12 @@
 const Footer = () => {
   return (
-    <div className="w-full bg-[#151D23] text-[##ADB0BC]">
-      <div className="flex gap-10 p-10 ">
-        <div className="w-4/12 flex flex-col gap-2">
-          <div className="flex gap-1 items-center">
-            <img src="../images/logo.png" alt="" className="w-16 h-16" />
-            <h1 className="text-4xl font-extrabold bg-gradient-to-b from-blue-700 to-green-400 text-transparent bg-clip-text">
+    <div className="w-full bg-[#151D23] text-[#ADB0BC]">
+      <div className="flex flex-col md:flex-row gap-10 p-6 md:p-10">
+        {/* Logo & Description */}
+        <div className="w-full md:w-4/12 flex flex-col gap-4">
+          <div className="flex gap-2 items-center">
+            <img src="../images/logo.png" alt="logo" className="w-14 h-14" />
+            <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-b from-blue-700 to-green-400 text-transparent bg-clip-text">
               CT<span className="text-white">GAME</span>
             </h1>
           </div>
@@ -15,8 +16,10 @@ const Footer = () => {
             dicta commodi repellat.
           </p>
         </div>
-        <div className="w-2/12 flex flex-col gap-4">
-          <h1 className="text-xl font-bold  ">QUICK LINK</h1>
+
+        {/* Quick Link */}
+        <div className="w-full md:w-2/12 flex flex-col gap-4">
+          <h1 className="text-lg font-bold">QUICK LINK</h1>
           <ul className="flex flex-col gap-2 text-sm">
             <li>
               <a href="">Gamming</a>
@@ -38,8 +41,10 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-2/12 flex flex-col gap-4">
-          <h1 className="text-xl font-bold  ">SUPPORTS</h1>
+
+        {/* Supports */}
+        <div className="w-full md:w-2/12 flex flex-col gap-4">
+          <h1 className="text-lg font-bold">SUPPORTS</h1>
           <ul className="flex flex-col gap-2 text-sm">
             <li>
               <a href="">Setting & Privacy</a>
@@ -61,28 +66,30 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-4/12 flex flex-col gap-4">
-          <h1 className="text-xl font-bold  ">NEWSLETTER</h1>
+
+        {/* Newsletter */}
+        <div className="w-full md:w-4/12 flex flex-col gap-4">
+          <h1 className="text-lg font-bold">NEWSLETTER</h1>
           <p className="text-sm">
             Subscribe our newsletter to get our latest update & newsconsectetur
           </p>
-          <form action="" className="flex gap-2">
+          <form className="flex gap-2 flex-row">
             <input
               type="text"
               placeholder="Get News & Updates"
-              className="p-2 px-6 rounded-md outline-none text-sm bg-[#1f2935]"
+              className="p-2 px-4 rounded-md outline-none text-sm bg-[#1f2935] flex-1"
             />
             <button className="btn p-2 bg-gray-700 text-white rounded text-xs font-bold">
               SEND
             </button>
           </form>
-          <div className="flex items-center gap-1 text-[var(--mau-xanh-la)]">
-            <p className="font-bold">
-              ACTIVE <span className="">WITH US</span>
+          <div className="flex items-center gap-2 text-green-400 font-bold">
+            <p>
+              ACTIVE <span className="text-white">WITH US</span>
             </p>
             <i className="fa-solid fa-angles-right text-sm"></i>
           </div>
-          <div className="flex gap-4 items-center mt-auto">
+          <div className="flex gap-4 items-center mt-2">
             <img
               src="https://themedox.com/mykd/wp-content/uploads/2023/10/social_icon01.png"
               alt=""
