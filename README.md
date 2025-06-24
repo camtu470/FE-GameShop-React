@@ -22,18 +22,6 @@
 - ✅ Responsive cho desktop, tablet, mobile
 
 
-## 🛠️ Cài đặt & chạy dự án
-
-```bash
-# Clone repo
-git clone https://github.com/your-username/gameverse-frontend.git
-cd gameverse-frontend
-
-# Cài dependencies
-npm install
-
-# Chạy local dev
-npm run dev
 
 ## 🛠️ Giao diện
 Home 1
@@ -62,4 +50,18 @@ service-detail ( bổ sung sau)
 product-detail ( bổ sung sau)
 cart - checkout - bổ sung sau
 auth(login-register-profile-forgot-reset) - bổ sung sau
+
+
+## 🛠️ Cài đặt & chạy dự án
+
+```bash
+# Clone repo
+git clone https://github.com/your-username/gameverse-frontend.git
+cd gameverse-frontend
+
+# Cài dependencies
+npm install
+
+# Chạy local dev
+npm run dev
 
