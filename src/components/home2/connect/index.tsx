@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/ui/SectionHeader";
+import { div } from "motion/react-client";
 import {
   FaFacebook,
   FaTwitter,
@@ -72,5 +73,4 @@ const Connect = () => {
     </div>
   );
 };
-
 export default Connect;

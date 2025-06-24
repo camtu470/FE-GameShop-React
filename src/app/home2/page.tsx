@@ -1,4 +1,3 @@
-
 import Footer from "@/components/home1/footer";
 import Banner from "@/components/home2/banner";
 import Carousel_slider from "@/components/home2/carousel";
@@ -11,13 +10,14 @@ import Service from "@/components/layout/service";
 export default function Home2Page() {
   return (
     <div className="">
-      <Banner />
-      <Tournament />
-      <Introduce />
+      {/* <Banner />
+      <MatchList /> */}
+      {/* <Tournament /> */}
+      {/* <Introduce />
       <Carousel_slider />
-      <MatchList />
+
       <Connect />
-      <Service />
+      <Service /> */}
       <Footer />
     </div>
   );
