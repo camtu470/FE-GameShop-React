@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-10">
       <main className="flex flex-col gap-20">
-        {/* <Banner />
-        <TopTrending />
+         <Banner />
+        {/* <TopTrending />
         <TopRate />
         <Introduce />
-        <Team /> */}
+        <Team />  */}
         {/* <News /> */}
         {/* <Season /> */}
         {/* <Feedback /> */}
