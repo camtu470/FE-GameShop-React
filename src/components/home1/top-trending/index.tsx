@@ -63,7 +63,7 @@ const TopTrending = () => {
           <div
             key={`${nft.id}-${nft.handle}`}
             className="w-1/4 p-4 flex flex-col gap-4 shadow rounded-xl bg-[#182029] text-white cursor-pointer hover:scale-[1.02] transition-transform"
-            onClick={() => router.push(`/shop/products/${nft.id}`)}
+            onClick={() => router.push(`/pages/shop/products/${nft.id}`)}
           >
             {/* Avatar & Info */}
             <div className="flex items-center justify-between">
