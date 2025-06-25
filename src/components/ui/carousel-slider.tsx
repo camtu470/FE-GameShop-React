@@ -157,7 +157,7 @@ export function Carousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[70vmin] mx-auto"
+      className="relative w-[70vmin] h-[80vmin] lg:h-[70vmin] mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
@@ -177,7 +177,7 @@ export function Carousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
+      <div className="absolute flex justify-center w-full mt-2 top-[calc(100%+1rem)]">
         <CarouselControl
           type="previous"
           title="Previous Slide"

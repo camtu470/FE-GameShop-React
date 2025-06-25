@@ -30,31 +30,31 @@ const Service = () => {
   return (
     <div className="w-11/12 mx-auto flex flex-col md:flex-row gap-10 py-6">
       <div className="md:w-1/2 flex flex-col gap-2">
-        <p className="uppercase text-md font-bold text-[#45f882] font-sans">
+        <p className="uppercase text-sm lg:text-md font-bold text-[#45f882] font-sans">
           powerful services
         </p>
-        <h1 className="uppercase text-5xl font-extrabold font-sans text-white">
+        <h1 className="uppercase text-2xl lg:text-5xl font-extrabold font-sans text-white">
           Our Powerful Services Done on time
         </h1>
         <div className="w-2/12 my-4 h-2 bg-[#45f882] clip-diagonal"></div>
         <div className="flex flex-col gap-12 text-gray-300 mt-6">
           <div className="flex gap-4">
             <div className="w-1/2 flex flex-col gap-2">
-              <IoDiamondSharp className="text-[#45f882] text-4xl" />
-              <p className="font-bold text-white text-xl font-sans">
+              <IoDiamondSharp className="text-[#45f882] text-2xl lg:text-4xl" />
+              <p className="font-bold text-white text-sm lg:text-xl font-sans">
                 Year Experience
               </p>
-              <p className="text-sm tracking-widest">
+              <p className="text-xs lg:text-sm tracking-widest">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 elementum sollicitudin is augue euismod.
               </p>
             </div>
             <div className="w-1/2 flex flex-col gap-2">
-              <RiUserSettingsLine className="text-[#45f882] text-4xl" />
-              <p className="font-bold text-white text-xl font-sans">
+              <RiUserSettingsLine className="text-[#45f882] text-2xl lg:text-4xl" />
+              <p className="font-bold text-white text-sm lg:text-xl font-sans">
                 Expert Teams
               </p>
-              <p className="text-sm tracking-widest">
+              <p className="text-xs lg:text-sm tracking-widest">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 elementum sollicitudin is augue euismod.
               </p>
@@ -62,21 +62,21 @@ const Service = () => {
           </div>
           <div className="flex gap-4">
             <div className="w-1/2 flex flex-col gap-2">
-              <LiaEthereum className="text-[#45f882] text-4xl" />
-              <p className="font-bold text-white text-xl font-sans">
+              <LiaEthereum className="text-[#45f882] text-2xl lg:text-4xl" />
+              <p className="font-bold text-white text-sm lg:text-xl font-sans">
                 Best NFT Game
               </p>
-              <p className="text-sm tracking-widest">
+              <p className="text-xs lg:text-sm tracking-widest">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 elementum sollicitudin is augue euismod.
               </p>
             </div>
             <div className="w-1/2 flex flex-col gap-2">
-              <IoSettingsOutline className="text-[#45f882] text-4xl" />
-              <p className="font-bold text-white text-xl font-sans">
+              <IoSettingsOutline className="text-[#45f882] text-2xl lg:text-4xl" />
+              <p className="font-bold text-white text-sm lg:text-xl font-sans">
                 Worldwide Client
               </p>
-              <p className="text-sm tracking-widest">
+              <p className="text-xs lg:text-smtracking-widest">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 elementum sollicitudin is augue euismod.
               </p>

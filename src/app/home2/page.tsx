@@ -13,11 +13,11 @@ export default function Home2Page() {
       <Banner />
       <MatchList />
       {/* <Tournament /> */}
-      {/* <Introduce /> */}
-      {/* <Carousel_slider /> */}
+      <Introduce />
+      <Carousel_slider />
 
-      {/* <Connect /> */}
-      {/* <Service /> */}
+      <Connect />
+      <Service />
       <Footer />
     </div>
   );
