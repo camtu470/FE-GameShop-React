@@ -1,26 +1,27 @@
 "use client";
 
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+
 const Introduce = () => {
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows.
-`;
+  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows.`;
+
   return (
-    <div className="flex gap-4 bg-[#10181F] p-6">
-      <div className="relative w-4/12">
-        <h1 className="uppercase text-6xl tracking-widest leading-[1] mt-6">
+    <div className="flex flex-col lg:flex-row gap-6 bg-[#10181F] p-6">
+      {/* LEFT */}
+      <div className="relative w-full lg:w-5/12">
+        <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-[1.2] mt-6">
           WE ARE{" "}
           <span className="font-extrabold text-[#45f882]">developer</span> ern
-          nft gam
-          <span className="font-extrabold">ing</span>
+          nft gam<span className="font-extrabold">ing</span>
         </h1>
-        <h1 className="absolute text-[200px] text-[#3636363d] font-extrabold">
+        <h1 className="absolute top-0 left-0 text-[80px] md:text-[150px] lg:text-[200px] text-[#3636363d] font-extrabold -z-10">
           ONLINE
         </h1>
 
-        <div className="absolute z-20 bottom-[60px] right-0 w-[150px] h-[150px] animate-spin-slow rounded-full border-2 border-dashed border-yellow-500">
-          {/* SVG ngôi sao vàng ở giữa */}
+        {/* Spinning circle + text */}
+        <div className="absolute z-20 bottom-8 right-0 w-[100px] md:w-[150px] h-[100px] md:h-[150px] animate-spin-slow rounded-full border-2 border-dashed border-yellow-500">
           <svg
-            className="absolute top-1/2 left-1/2 w-12 h-12 -translate-x-1/2 -translate-y-1/2"
+            className="absolute top-1/2 left-1/2 w-8 h-8 md:w-12 md:h-12 -translate-x-1/2 -translate-y-1/2"
             viewBox="0 0 64 64"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,6 @@ const Introduce = () => {
             />
           </svg>
 
-          {/* SVG chữ chạy theo đường tròn */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 150 150"
@@ -47,7 +47,7 @@ const Introduce = () => {
             </defs>
             <text
               fill="white"
-              fontSize="16"
+              fontSize="12"
               fontWeight="bold"
               textAnchor="middle"
               dominantBaseline="middle"
@@ -60,19 +60,22 @@ const Introduce = () => {
           </svg>
         </div>
       </div>
-      <div className="relative w-8/12 flex gap-4 z-20">
+
+      {/* RIGHT */}
+      <div className="relative w-full lg:w-7/12 flex flex-col sm:flex-row gap-4 z-20">
         <img
           src="https://themedox.com/mykd/wp-content/uploads/2023/10/mask_img01.jpg"
-          alt=""
-          className="rounded"
+          alt="img1"
+          className="rounded w-full sm:w-1/2 object-cover"
         />
-        <div className="relative">
+        <div className="relative w-full sm:w-1/2">
           <img
             src="https://themedox.com/mykd/wp-content/uploads/2023/10/mask_img02.jpg"
-            alt=""
-            className="rounded"
+            alt="img2"
+            className="rounded w-full object-cover"
           />
-          <div className="absolute top-0 right-0 text-[#45f882] bg-[#10181F] p-4 px-10">
+          {/* Bouncing SVG */}
+          <div className="absolute top-0 right-0 text-[#45f882] bg-[#10181F] p-2 sm:p-4 px-6 sm:px-10">
             <div className="animate-bounceX">
               <svg
                 width="109"
@@ -111,10 +114,12 @@ const Introduce = () => {
             </div>
           </div>
         </div>
-        <div className="absolute h-[150px] bottom-0 right-0 w-10/12 bg-[#10181F] p-4 rounded">
+
+        {/* Bottom Text Box */}
+        <div className="absolute h-fit bottom-0 right-0 w-full sm:w-10/12 bg-[#10181F] p-4 rounded">
           <TextGenerateEffect
             words={words}
-            className="text-[#ADB0D2] font-sans text-base font-medium px-4"
+            className="text-[#ADB0D2] font-sans text-sm md:text-base font-medium px-2 md:px-4"
           />
         </div>
       </div>

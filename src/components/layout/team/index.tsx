@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { players } from "@/data/player"; // Đường dẫn đúng tùy cấu trúc thư mục
+import { players } from "@/data/player"; 
 import SectionHeader from "@/components/ui/SectionHeader";
 
 const Team = () => {
