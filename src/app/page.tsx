@@ -14,7 +14,7 @@ export default function Home() {
       <main className="flex flex-col gap-20">
         <Banner />
         {/* <TopTrending /> */}
-        {/* <TopRate /> */}
+        <TopRate />
         <Introduce />
         {/* <Team /> */}
         {/* <News /> */}
