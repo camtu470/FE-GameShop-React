@@ -76,7 +76,7 @@ const Carousel = ({
 const Banner = () => {
   return (
     <div
-      className="w-full px-4 lg:px-16 py-4 lg:py-10 relative lg:pt-32"
+      className="w-full px-4 pt-24 pb-4 lg:px-16 lg:py-10 relative lg:pt-32"
       style={{
         backgroundImage:
           "url('https://themedox.com/mykd/wp-content/uploads/2023/10/banner_bg.jpg')",

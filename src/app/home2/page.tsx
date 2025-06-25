@@ -10,14 +10,14 @@ import Service from "@/components/layout/service";
 export default function Home2Page() {
   return (
     <div className="">
-      {/* <Banner />
-      <MatchList /> */}
+      <Banner />
+      <MatchList />
       {/* <Tournament /> */}
-      {/* <Introduce />
-      <Carousel_slider />
+      {/* <Introduce /> */}
+      {/* <Carousel_slider /> */}
 
-      <Connect />
-      <Service /> */}
+      {/* <Connect /> */}
+      {/* <Service /> */}
       <Footer />
     </div>
   );
