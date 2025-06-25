@@ -16,7 +16,7 @@ export default function Home() {
         <TopTrending />
         <TopRate />
         <Introduce />
-        {/* <Team /> */}
+        <Team />
         {/* <News /> */}
         {/* <Season /> */}
         {/* <Feedback /> */}

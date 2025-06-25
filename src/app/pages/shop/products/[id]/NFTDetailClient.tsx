@@ -20,7 +20,7 @@ export default function NFTDetailClient({ nft }: Props) {
   >("description");
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 mt-20">
       <NameArea title={`${nft.name}`} />
 
       <div className="px-4 sm:px-6 lg:px-10 py-10 flex flex-col gap-10">
