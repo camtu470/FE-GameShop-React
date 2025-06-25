@@ -1,162 +1,3 @@
-// import React from "react";
-// import { Timeline } from "@/components/ui/timeline";
-// import { div } from "motion/react-client";
-// import { GoDotFill } from "react-icons/go";
-// const Season = () => {
-//   const data = [
-//     {
-//       title: "2024",
-//       content: (
-//         <div>
-//           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-//             Built and launched Aceternity UI and Aceternity UI Pro from scratch
-//           </p>
-//           <div className="grid grid-cols-2 gap-4">
-//             <img
-//               src="https://assets.aceternity.com/templates/startup-1.webp"
-//               alt="startup template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/templates/startup-2.webp"
-//               alt="startup template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/templates/startup-3.webp"
-//               alt="startup template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/templates/startup-4.webp"
-//               alt="startup template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//           </div>
-//         </div>
-//       ),
-//     },
-//     {
-//       title: "Early 2023",
-//       content: (
-//         <div>
-//           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-//             I usually run out of copy, but when I see content this big, I try to
-//             integrate lorem ipsum.
-//           </p>
-//           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-//             Lorem ipsum is for people who are too lazy to write copy. But we are
-//             not. Here are some more example of beautiful designs I built.
-//           </p>
-//           <div className="grid grid-cols-2 gap-4">
-//             <img
-//               src="https://assets.aceternity.com/pro/hero-sections.png"
-//               alt="hero template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/features-section.png"
-//               alt="feature template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/pro/bento-grids.png"
-//               alt="bento template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/cards.png"
-//               alt="cards template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//           </div>
-//         </div>
-//       ),
-//     },
-//     {
-//       title: "Changelog",
-//       content: (
-//         <div>
-//           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-//             Deployed 5 new components on Aceternity today
-//           </p>
-//           <div className="mb-8">
-//             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-//               ✅ Card grid component
-//             </div>
-//             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-//               ✅ Startup template Aceternity
-//             </div>
-//             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-//               ✅ Random file upload lol
-//             </div>
-//             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-//               ✅ Himesh Reshammiya Music CD
-//             </div>
-//             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-//               ✅ Salman Bhai Fan Club registrations open
-//             </div>
-//           </div>
-//           <div className="grid grid-cols-2 gap-4">
-//             <img
-//               src="https://assets.aceternity.com/pro/hero-sections.png"
-//               alt="hero template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/features-section.png"
-//               alt="feature template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/pro/bento-grids.png"
-//               alt="bento template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//             <img
-//               src="https://assets.aceternity.com/cards.png"
-//               alt="cards template"
-//               width={500}
-//               height={500}
-//               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-//             />
-//           </div>
-//         </div>
-//       ),
-//     },
-//   ];
-//   return (
-//     <div className="relative w-full overflow-clip">
-//       <Timeline data={data} />
-//     </div>
-
-//   );
-// };
-
-// export default Season;
-
 import React from "react";
 import { MdPlayArrow } from "react-icons/md";
 
@@ -192,13 +33,13 @@ const Season = () => {
   ];
 
   return (
-    <div className="w-10/12 mx-auto flex gap-10">
+    <div className="w-11/12 mx-auto flex flex-col lg:flex-row gap-10">
       {/* Left Section */}
-      <div className="w-6/12 flex flex-col gap-6">
-        <h1 className="uppercase font-extrabold text-6xl font-sans">
+      <div className="w-full lg:w-6/12 flex flex-col gap-6">
+        <h1 className="uppercase font-extrabold text-3xl lg:text-6xl font-sans">
           a look into roadmaps seasons
         </h1>
-        <p className="text-[#ADB0BC]">
+        <p className="text-[#ADB0BC] text-sm lg:text-base">
           With Season 1 Ending with our play and Duis elementum sollicitudin is
           yaugue euismods Nulla ulla Player-focused updates games from Mobile
           App and Enjoy
@@ -211,24 +52,26 @@ const Season = () => {
         <img
           src="https://themedox.com/mykd/wp-content/uploads/2023/10/roadmap.png"
           alt="roadmap"
-          className="animate-float"
+          className="animate-float w-full max-w-sm"
         />
       </div>
 
-      {/* Timeline line */}
-      <div className="relative mx-6">
+      {/* Timeline line for large screens */}
+      <div className="hidden lg:flex relative mx-6">
         <div className="w-[8px] h-full bg-gradient-to-b from-[#45f882] to-transparent"></div>
         <MdPlayArrow className="absolute top-[90px] left-[-12px] text-[#45f882] text-6xl" />
       </div>
 
-      {/* Right Section: Render from data */}
-      <div className="w-6/12 flex flex-col gap-6">
+      {/* Right Section: Timeline items */}
+      <div className="w-full lg:w-6/12 flex flex-col gap-6">
         {seasonData.map((season, seasonIndex) => (
           <div
             key={seasonIndex}
             className="p-6 flex flex-col gap-4 bg-[#1b242e] rounded-lg"
           >
-            <h1 className="font-extrabold font-sans text-xl">{season.title}</h1>
+            <h1 className="font-extrabold font-sans text-lg lg:text-xl">
+              {season.title}
+            </h1>
             <ul className="flex flex-col gap-2">
               {season.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="flex items-center gap-2">

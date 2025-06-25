@@ -18,7 +18,7 @@ export default function Home() {
         <Introduce />
         <Team />
         {/* <News /> */}
-        {/* <Season /> */}
+        <Season />
         {/* <Feedback /> */}
       </main>
       <Footer />
